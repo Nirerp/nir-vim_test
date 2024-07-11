@@ -2,8 +2,10 @@ Prerequisites:
 git
 (sudo apt install git)
 
-After installing nvim and opening nvim for the first time:
+After script is done installing everything, re-enter terminal and open nvim with "nvim"
 
-Run command :!pip install neovim
-Run command :!pip install debugpy
-Run command :!pip install isort
+After nvim installs all the scripts you might receive an error, don't mind it. close nvim.
+re-enter envim and run command ":Mason" from within nvim, let Mason install all it needs to run smoothly.
+
+
+

@@ -8,6 +8,13 @@ sudo rm -r ~/.local/share/nvim/
 #install curl#
 sudo apt  install curl
 
+### Installing PIP:
+sudo apt install python3-pip
+
+sudo apt install python3-neovim
+sudo apt install python3-debugpy
+sudo apt install python3-isort
+
 ######## install nvim ########
  sudo snap install nvim --classic
 ##############################
@@ -60,8 +67,7 @@ sudo npm install -g live-server
 # copy nvim folder to .config
 sudo cp -r nvim/ ~/.config/
 
-
-
+exit
 
 
 
