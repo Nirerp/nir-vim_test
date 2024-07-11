@@ -5,6 +5,9 @@ sudo rm -r ~/.config/nvim/
 sudo rm -r ~/.local/share/nvim/
 ###########################
 
+#install curl#
+sudo apt  install curl
+
 ######## install nvim ########
  sudo snap install nvim --classic
 ##############################
@@ -40,7 +43,7 @@ else
 fi
 
 sudo unzip JetBrainsMono.zip -d /usr/share/fonts/JetBrainsMono
-fc-cache -fv
+sudo fc-cache -fv
 #################################
 
 
@@ -52,13 +55,12 @@ sudo apt update
 sudo apt install nodejs
 
 # install live-server
-npm install -g live-server
+sudo npm install -g live-server
 
 # copy nvim folder to .config
 sudo cp nvim/ ~/.config/
 
-#open nvim:
-nvim
+
 
 
 
