@@ -1,3 +1,7 @@
+Prerequisites:
+git
+(sudo apt install git)
+
 After installing nvim and opening nvim for the first time:
 
 Run command :!pip install neovim

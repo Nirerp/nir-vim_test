@@ -53,12 +53,12 @@ sudo apt install python3-venv
 # Install npm:
 sudo apt update
 sudo apt install nodejs
-
+sudo apt install npm
 # install live-server
 sudo npm install -g live-server
 
 # copy nvim folder to .config
-sudo cp nvim/ ~/.config/
+sudo cp -r nvim/ ~/.config/
 
 
 
