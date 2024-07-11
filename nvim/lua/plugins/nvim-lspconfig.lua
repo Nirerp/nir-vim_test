@@ -38,7 +38,10 @@ return {
 				'quick_lint_js',
 				'yamlls',
 				'basedpyright',
-				'ruff'
+				'ruff',
+				'rust_analyzer',
+				'clangd',
+				'bashls'
 
 			}
 		})
