@@ -38,6 +38,7 @@ return {
 				'quick_lint_js',
 				'yamlls',
 				'basedpyright',
+				'ruff'
 
 			}
 		})
@@ -51,6 +52,7 @@ return {
 				'isort',
 				'mypy',
 				'pylint',
+				'basedpyright'
 			},
 		})
 

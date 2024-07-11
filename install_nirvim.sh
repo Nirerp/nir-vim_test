@@ -14,6 +14,8 @@ sudo apt install python3-pip
 sudo apt install python3-neovim
 sudo apt install python3-debugpy
 sudo apt install python3-isort
+sudo apt install python3-ruff
+
 
 ######## install nvim ########
  sudo snap install nvim --classic
