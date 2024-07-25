@@ -18,7 +18,7 @@ sudo apt install python3-ruff
 
 
 ######## install nvim ########
- sudo snap install nvim --classic
+sudo snap install nvim --classic
 ##############################
 
 
@@ -46,9 +46,9 @@ filename="${font_url##*/}"
 wget "$font_url" -O "$filename"
 
 if [ $? -eq 0 ]; then
-  echo "JetBrains Mono Nerd Font downloaded successfully: $filename"
+    echo "JetBrains Mono Nerd Font downloaded successfully: $filename"
 else
-  echo "Error downloading JetBrains Mono Nerd Font."
+    echo "Error downloading JetBrains Mono Nerd Font."
 fi
 
 sudo unzip JetBrainsMono.zip -d /usr/share/fonts/JetBrainsMono
@@ -70,6 +70,5 @@ sudo npm install -g live-server
 sudo cp -r nvim/ ~/.config/
 
 exit
-
 
 

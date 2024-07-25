@@ -41,7 +41,7 @@ function _G.run_html_file()
 		local c_terminal = Terminal:new({
 			cmd = "live-server " .. file,
 			direction = "float",
-			close_on_exit = false, -- Keep the terminal open after the command finishes
+			close_on_exit = true, -- Keep the terminal open after the command finishes
 		})
 		c_terminal:toggle()
 	else

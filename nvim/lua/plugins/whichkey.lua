@@ -3,7 +3,7 @@ return {
 	event = "VeryLazy",
 	init = function()
 		vim.o.timeout = true
-		vim.o.timeoutlen = 300
+		vim.o.timeoutlen = 200
 	end,
 	opts = {
 		-- your configuration comes here
@@ -13,46 +13,20 @@ return {
 	config = function()
 		-- Which-key configuration
 		local wk = require("which-key")
+		wk.add({
+			{ "<leader>G", group = "Git" }, --
+			{ "<leader>L", group = "Live-Server" },
+			{ "<leader>s", group = "Search" }, --
+			{ "<leader>c", group = "Check" }, --
+			{ "<leader>t", group = "Tabs" }, --
+			{ "<leader>l", group = "LSP" }, --
+			{ "<leader>N", group = "Nir-Vim" }, --
 
-		-- Register the custom prefixes and their descriptions
-		wk.register({
-				["<F3>"] = { "<cmd>vsp<CR>", "Vertical Split" },
-				["<F4>"] = { "<cmd>sp<CR>", "Horizontal Split" },
-				G = {
-					name = "Git",
-					g = "Lazygit"
-				},
-				L = {
-					name = "Live Server",
-					s = "Toggle Liver-Server On/Off"
-				},
-				c = {
-					name = "Open",
-					s = "Cheatsheet"
-				},
-
-				t = {
-					name = "Themes",
-					h = "Change Colorscehem"
-				},
-				l = {
-					name = "LSP", -- Change "+prefix" to "LSP"
-					f = "Format Code",
-					-- You can add more prefixes and their descriptions here
-					-- For example:
-					r = "Rename (Refactor)",
-					a = "Code Actions",
-				},
-				s = {
-					name = "Search",
-					w = "word",
-				},
-				o = {
-					name = "Change OneDark",
-					t = "Change Style"
-
-				},
-			},
-			{ prefix = "<leader>" })
-	end
+			-- Nested mappings are allowed and can b e added in any order
+			-- Most attributes can be inherited or overridden on any level
+			-- There's no limit to the depth of nesting
+			mode = { "n", "v" }, -- NORMAL and VISUAL mode
+			{ "<leader>w", "<cmd>w<cr>", desc = "Write" },
+		})
+	end,
 }

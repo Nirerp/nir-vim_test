@@ -14,11 +14,12 @@ vim.opt.rtp:prepend(lazypath)
 --------
 
 -- Load plugins and configurations
-require("lazy").setup("plugins")
 require("vim-options")
+require('keymaps')
+require("lazy").setup("plugins")
 require("compiler")
 require("python_snippets")
 
 -- Set your colorscheme
-vim.cmd[[colorscheme tokyonight-night]]
-
+-- load the colorscheme here
+vim.cmd([[colorscheme tokyonight]])

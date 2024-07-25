@@ -12,7 +12,7 @@ return {
 			-- show hidden files
 			filesystem = {
 				filtered_items = {
-					visible = true,
+					visible = false,
 					show_hidden_count = true,
 					hide_dotfiles = true,
 					hide_gitignored = true,
@@ -25,7 +25,6 @@ return {
 					never_show = {},
 				},
 			},
-			-- end of show hidden files --
 			event_handlers = {
 
 				{

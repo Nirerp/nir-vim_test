@@ -38,5 +38,8 @@ Alt + j        |                                           | Move Current Line D
 
 
 
-########## OTHERS ##########
+########## OTHERS #######
+
 Inside neo-tree (Ctrl+n) press H to toggle show hidden items.
+Inside neo-tree (Ctrl+n) you can press "t" on a file to open it in a new tab.
+Inside neo-tree (Ctrl+n) you can press "s" on a file to open it in a new split screen with current buffer.
